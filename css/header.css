@@ -1,0 +1,285 @@
+@charset "utf-8";
+.header_wrap {
+	background: #FFFFFF;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	margin: auto;
+}
+
+.header_wrap .header {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logo_dragonest {
+	width: 150px;
+	height: 55px;
+	float: left;
+	background: url(../image/gw_logo_01.jpg) left center no-repeat;
+	background-size: auto 80%;
+}
+
+.logo_arayark {
+	width: 85px;
+	height: 55px;
+	float: left;
+	background: url(../image/dibufuben_13.png) left center no-repeat;
+	background-size: auto 80%;
+}
+
+.header ul {
+	float: right;
+	overflow: hidden;
+}
+
+.header li {
+	float: left;
+	font-size: 16px;
+	line-height: 55px;
+	margin: 0 8px;
+}
+
+.loginner {
+	display: none;
+	font-size: 20px;
+}
+
+.loginner img {
+	margin: 5px 10px 0 0;
+	float: left;
+	width: 45px;
+	border-radius: 50%;
+}
+
+.loginner-login {
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 55px;
+	z-index: 999;
+}
+
+.loginner-login2 {
+	position: absolute;
+	right: -120px;
+	width: 355px;
+	height: 230px;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.7);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.loginner-login2 figure{
+    margin: 15px;
+    overflow: hidden;
+}
+.loginner-login2 figure img{
+    width: 55px;
+    height: 55px;
+	float: left;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.loginner-login2 button{
+	border: none;
+    width: 115px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    margin: 5px;
+}
+.loginner-login2 figure img:hover,.loginner-login2 button:hover{
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+.login2-out{
+	background: #ea656c;
+	margin-left: 55px!important;
+}
+.login2-huan{
+	background: rgb(95, 96, 147);
+}
+.loginn {
+	display: block;
+}
+
+.login_content {
+	width: 100%;
+	height: 0%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+	overflow: hidden;
+}
+
+.login-close {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+}
+
+.login_content .content-thing {
+	width: 580px;
+	height: 456px;
+	margin: -228px 0 0 -290px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.content-thing img {
+	margin-bottom: 70px;
+}
+
+.content-thing #logForm .iptlo1,
+.iptlo2 {
+	border: 1px solid #696aa2;
+	width: 565px;
+	height: 70px;
+	line-height: 70px;
+	outline: 0;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.content-thing .button {
+	width: 579px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+.button .logSubmit {
+	width: 280px;
+	height: 100%;
+	border: none;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	background: #db6869;
+	cursor: pointer;
+}
+
+.button .register1 {
+	float: right;
+	line-height: 50px;
+	text-align: center;
+	width: 280px;
+	height: 100%;
+	color: white;
+	background: rgb(95, 96, 147);
+	cursor: pointer;
+}
+
+.wangjipassword {
+	height: 80px;
+	line-height: 80px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.wangjipassword a {
+	color: white;
+}
+
+.lead_box {
+	display: none;
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	z-index: 2000;
+	margin: -225px 0 0 -200px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px 0px;
+}
+
+.lead_box a {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: -21px;
+	right: -21px;
+	background: #ea656c;
+	border: 1px solid #fff;
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.lead_box a span {
+	margin: 2px 0 0 0;
+	width: 100%;
+	height: 100%;
+	float: left;
+	background: url(../image/guanbi_03.png) no-repeat center;
+	opacity: 0.8;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.box_text {
+	width: 300px;
+	height: 105px;
+	margin: 50px auto 0;
+	line-height: 45px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.lead_box .box_button {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	background: #515293;
+	color: #fff;
+	line-height: 30px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
+}
+
+.lead_box a:hover,
+.logSubmit:hover {
+	background: #f57e7e;
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+
+.lead_box .box_button:hover,
+.register1:hover {
+	background: #696aa1;
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+
+.login_content .login-close:hover,
+{
+	animation: 1s linear 0s normal none 1 running su-padding;
+}

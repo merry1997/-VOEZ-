@@ -1,0 +1,1067 @@
+@charset "utf-8";
+body,
+html {
+	overflow: hidden;
+}
+
+section {
+	background: url(../image/sectionbg.png) no-repeat center/100% 100%;
+}
+
+#main {
+	position: relative;
+	overflow: hidden;
+}
+
+
+/*下载*/
+
+.down-box {
+	display: none;
+	font-size: 40px;
+	line-height: 250px;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 999;
+	width: 400px;
+	height: 250px;
+	background: rgba(0, 0, 0, 0.8);
+	border: 4px solid rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+}
+
+.down-box b {
+	line-height: 30px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 30px;
+	color: white;
+}
+
+
+/*首页*/
+
+.nav {
+	position: fixed;
+	z-index: 999;
+	top: 30%;
+	padding-left: 50%;
+	margin-left: -35%;
+}
+
+.alertvideo-box {
+	width: 1100px;
+	height: 640px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+
+.alertvideo-box b {
+	width: 55px;
+	height: 55px;
+	color: white;
+	text-align: center;
+	line-height: 55px;
+	font-size: 30px;
+	border-radius: 50%;
+	position: absolute;
+	right: -5em;
+	background: #84B9FF;
+	top: 1em;
+	cursor: pointer;
+}
+
+.nav-list li {
+	font-size: 1.5em;
+	line-height: 2.3em;
+	list-style-image: url(../image/libg0.png);
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.nav-list-home {
+	list-style-image: url(../image/libg2.png)!important;
+}
+
+.nav-list li:hover {
+	padding-left: 20px;
+	color: dodgerblue;
+	list-style-image: url(../image/libg1.png);
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+
+.nav-lis {
+	padding-left: 20px;
+	color: dodgerblue;
+	list-style-image: url(../image/libg1.png)!important;
+}
+
+.home {
+	width: 100%;
+	background: none;
+}
+
+.main-one-content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.main-one-wrap {
+	display: block;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	background: url(../image/index_bg1.png) no-repeat center/100% 100%;
+	background-size: 100% 100%;
+}
+
+.home-video {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.main-one-img {
+	height: 40.5%;
+	background: url(../image/lankong01.png) center/auto 80% no-repeat;
+}
+
+.redeem_code,
+.play,
+.download {
+	width: 100%;
+	text-align: center;
+}
+
+.play {
+	cursor: pointer;
+	height: 14%;
+	margin-top: 0.7%;
+}
+
+.play img {
+	height: 100%;
+}
+
+.download {
+	height: 16%;
+	margin: 3% auto 0;
+	position: relative;
+}
+
+.download>ul {
+	width: 52%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.download>ul>li {
+	width: 100%;
+	height: 44%;
+	cursor: pointer;
+}
+
+.download>ul>li:last-child {
+	position: absolute;
+	bottom: 0;
+}
+
+.ios-down {
+	background: url(../image/index_ios.png) no-repeat center/contain;
+}
+
+.android-down {
+	position: absolute;
+	bottom: 0;
+	background: url(../image/index_android_act.png) no-repeat center/contain;
+}
+
+.download>figure {
+	height: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+.download>figure>img {
+	height: 100%;
+	float: right;
+}
+
+.download i {
+	position: absolute;
+	right: 0px;
+	bottom: -1.5em;
+	font-style: normal;
+	color: #FFFFFF;
+	width: 40%;
+	font-family: 宋体;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.audiobgm {
+	position: fixed;
+	height: 4.26%;
+	left: 3%;
+	top: 76px;
+	z-index: 998;
+	cursor: pointer;
+}
+
+.main-one-wrap * {
+	position: relative;
+	z-index: 800;
+}
+
+.people {
+	position: absolute;
+	top: -55px;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	background: url(../image/people.png) no-repeat right bottom/auto 57%;
+	;
+}
+
+.main-one-img,
+.redeem_code,
+.play,
+.download,
+.people {
+	display: none;
+}
+
+
+/*新闻公告*/
+
+.content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-top: 55px;
+	position: relative;
+}
+
+.news-content {
+	height: 100%;
+	padding: 50% 10%;
+	opacity: 0;
+	position: absolute;
+	top: -80%;
+	background: rgba(255, 255, 255, 0.8);
+	transform: skew(40deg);
+}
+
+.news .menban {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../image/tuxing.png) no-repeat center/100% 100%;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+}
+
+.newsss {
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+}
+
+.news-con {
+	position: relative;
+	z-index: 800;
+	height: 100%;
+	width: 50em;
+	opacity: 0;
+	margin: 0 auto;
+	padding: 0;
+	left: auto;
+}
+
+.news-con h3 {
+	margin: 3em 0;
+	height: 5%;
+	background: url(../image/news.png) no-repeat left/auto 100%;
+}
+
+.news-banner {
+	background-color: #fff;
+	width: 100%;
+	height: 19.81em;
+	box-shadow: 0 3px 5px #c5c5c5;
+	overflow: hidden;
+	position: relative;
+}
+
+.news-banner .news-list {
+	width: 100%;
+	height: 100%;
+}
+
+.news-banner .news-list .newban {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.news-banner .news-list img {
+	width: 100%;
+}
+
+.news-sw {
+	position: absolute;
+	bottom: 5%;
+	left: 3%;
+}
+
+.on {
+	background: url(../image/ban.png) no-repeat left!important;
+}
+
+.news-sw li {
+	float: left;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	line-height: 14px;
+	text-align: center;
+	background: url(../image/ban.png) no-repeat right;
+	cursor: pointer;
+}
+.news-banner3{
+	position: absolute;
+	z-index: -2;
+	box-shadow: 0 3px 5px #c5c5c5;
+    background: linear-gradient(to top left, #c5ecff, #c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0);
+    padding: 10px 1.5em;
+    animation: bgcol 0.85s linear infinite;
+}
+@keyframes bgcol{
+	0%{ background: linear-gradient(to top right,#c5ecff, #c5ecff, #c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0);}
+	10%{ background: linear-gradient(to top right,#c5ecff, #c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff);}
+	20%{ background: linear-gradient(to top right,#c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff);}
+	30%{ background: linear-gradient(to top right,#c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff);}
+	40%{ background: linear-gradient(to top right,#c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff);}
+	50%{ background: linear-gradient(to top right, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff);}
+	
+	60%{ background: linear-gradient(to top right, #fad0e0, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff, #fad0e0);}
+	70%{ background: linear-gradient(to top right, #fad0e0, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff, #fad0e0, #fad0e0);}
+	80%{ background: linear-gradient(to top right, #fad0e0, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff, #fad0e0, #fad0e0, #fad0e0);}
+	90%{ background: linear-gradient(to top right, #fad0e0, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0);}
+	100%{ background: linear-gradient(to top right, #c5ecff, #c5ecff, #c5ecff,#c5ecff,#c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0,#fad0e0);}
+}
+.news-banner2 {
+	box-shadow: 0 3px 5px #c5c5c5;
+	margin-top: 1em;
+	width: 59%;
+	font-size: 18px;
+	padding: 10px 1em;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.news-banner2 .nav1 {
+	width: 100%;
+	height: 1.8em;
+	font-size: 1em;
+	border-bottom: 2px solid #c9d0d6;
+	position: relative;
+}
+
+.nav1 span {
+	float: left;
+	cursor: pointer;
+	height: 1.8em;
+	line-height: 1.4em;
+	display: inline-block;
+	margin-right: 2.8em;
+}
+
+.nav1 .more {
+	float: right;
+	line-height: 1.5em;
+	background: url(../image/more.png) no-repeat left;
+	padding-left: 15px;
+}
+
+.nav1 .bb {
+	position: absolute;
+	bottom: -2px;
+	height: 2px;
+	width: 3.5em;
+	background-color: #84b9ff;
+}
+
+.nav1-list ul {
+	display: none;
+	padding-top: 6px;
+	cursor: pointer;
+}
+
+.nav1-list .active {
+	display: block;
+}
+
+.nav1-list ul li {
+	position: relative;
+	padding-right: 100px;
+	font-size: 1em;
+	line-height: 2em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.nav1-list ul li:hover a,
+.more:hover,
+.nav1-list ul li:hover {
+	color: hotpink!important;
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+
+.nav1-list .date {
+	position: absolute;
+	right: 0;
+	font-size: 1em;
+	line-height: 2em;
+	font-style: normal;
+}
+
+.intro {
+	position: relative;
+	z-index: 998;
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	left: auto;
+}
+
+.intro .person {
+	position: absolute;
+	right: -7%;
+	top: 10%;
+	height: 80%;
+}
+
+.intro .persontxt {
+	height: 30%;
+	margin: 9em 0 0 10em;
+}
+
+.container {
+	margin: 14em 0 0 15em;
+	transform: rotate(45deg);
+}
+
+.container .l1 {
+	margin-left: 6.9em;
+}
+
+.container span {
+	display: inline-block;
+	width: 10em;
+	height: 10em;
+	margin: .14em;
+	overflow: hidden;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.container span:hover,
+.audiobgm:hover,
+.play img:hover,
+b:hover,
+.ulWrap ul li:hover,
+.diarynav li:hover,
+.hd ul li:hover,
+.hd a:hover,
+.diarybox:hover .pic,
+.diarybox:hover .txt,
+.diarybox:hover .button1,
+.diarybox:hover .viewchapter,
+.diarybox:hover .viewcon,
+.diarybox:hover .diarybox_ico {
+	animation: 1s linear 0s normal none 1 running su-padding;
+}
+
+.container i {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.container span i:hover {
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.container span.active i {
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.container .l1 {
+	margin-left: 10.5em
+}
+
+.container .l3 {
+	margin-left: -10.5em
+}
+
+.container .p1 {
+	background: url(../image/q1.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p2 {
+	background: url(../image/q2.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p3 {
+	background: url(../image/q3.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p4 {
+	background: url(../image/q4.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p5 {
+	background: url(../image/q5.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p6 {
+	background: url(../image/q6.png) no-repeat center 110%;
+	background-size: cover;
+}
+
+.container .p7 {
+	background: url(../image/q7.png) no-repeat center 100%;
+	background-size: cover;
+}
+
+.diary {
+	position: relative;
+	overflow: hidden;
+	background: #c5ecff;
+	background: -webkit-linear-gradient(left, #c5ecff, #c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0);
+	background: linear-gradient(to right, #c5ecff, #c5ecff, #c5ecff, #c5ecff, #fad0e0, #fad0e0, #fad0e0, #fad0e0);
+}
+
+.diary .news-content {
+	top: -68%;
+	left: 15%;
+	background: white;
+	transform: rotate(45deg);
+}
+
+.diary-content {
+	position: relative;
+	z-index: 600;
+	height: 100%;
+	width: 57%;
+	margin: 0 auto;
+	padding: 5% 0 0 0;
+	left: auto;
+}
+
+.diarynav {
+	position: absolute;
+	right: -10em;
+	width: 8em;
+	top: 30%;
+	z-index: 800;
+	text-align: center;
+}
+
+.diarynav .active {
+	color: #6c6e8d;
+	font-size: 18px;
+}
+
+.diarynav li {
+	height: 3em;
+	line-height: 3em;
+	text-transform: capitalize;
+}
+
+.nodata {
+	float: left;
+	width: 100%;
+	height: 80%;
+	background: url(../image/nodata.png) no-repeat center;
+}
+
+.multipleLine {
+	opacity: 1;
+}
+
+.bd .tempWrap {
+	overflow: hidden;
+	position: relative;
+	height: 676px
+}
+
+.tempWrap .ulWrap {
+	position: relative;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.ulWrap ul {
+	overflow: hidden;
+}
+
+.ulWrap ul li {
+	width: 31%;
+	height: 31%;
+	margin: 0 1%;
+	float: left;
+	display: inline;
+	text-align: left;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.ulWrap ul li .pic {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 8%;
+	position: relative;
+}
+
+.ulWrap ul li .pic .pic-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../image/s5_pic_cover.png) no-repeat center/cover;
+}
+
+.ulWrap ul li .pic img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 2px;
+}
+
+.ulWrap ul li .txt {
+	position: absolute;
+	width: 51%;
+	bottom: 18%;
+	left: 51%;
+	font-weight: bold;
+}
+
+.ulWrap ul li .txt .title {
+	float: left;
+	width: 100%;
+}
+
+.ulWrap ul li .txt .title .num {
+	font-size: 40px;
+	color: #777ba3;
+	font-family: "Arial Black", "Arial";
+	float: left;
+}
+
+.ulWrap ul li .txt .title .name {
+	font-size: 20px;
+	color: #4c5e7b;
+	float: left;
+	padding: 1em 0 0 0.2em;
+}
+
+.ulWrap ul li .txt .time {
+	width: 100%;
+	float: left;
+	font-family: "微软雅黑 Bold", 微软雅黑;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+.ulWrap ul li .viewcon {
+	display: none;
+}
+
+.ulWrap ul li .button1 {
+	width: 57%;
+	height: 57%;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 22%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.multipleLine .hd {
+	overflow: hidden;
+	height: 30px;
+	text-align: center;
+}
+
+.multipleLine .hd .prev,
+.multipleLine .hd .next {
+	display: block;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.multipleLine .hd .prev {
+	background: url(../image/s5_slide_left.png) no-repeat;
+}
+
+.multipleLine .hd .next {
+	background: url(../image/s5_slide_right.png) no-repeat;
+}
+
+.multipleLine .hd ul {
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.multipleLine .hd ul li {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	margin: 0 10px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url(../image/s5_slide_ico.png) no-repeat!important;
+	opacity: 0.5;
+}
+
+.multipleLine .hd ul .on {
+	opacity: 1;
+}
+
+
+/*日记打开部分*/
+
+.diary-content .diarybox {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	z-index: 998;
+	left: 0;
+	top: 5%;
+}
+
+.diarybox .pic {
+	position: relative;
+	width: 40%;
+	height: 60%;
+	margin-left: 10%;
+	top: 10%;
+}
+
+.diarybox .pic .pic-cover {
+	position: absolute;
+	width: 76%;
+	height: 89%;
+	left: 20%;
+	top: -3%;
+	border: 7px solid #9fa8da;
+}
+
+.diarybox .pic img {
+	position: absolute;
+	width: 84%;
+	height: 80%;
+	top: 3%;
+	left: 8%;
+}
+
+.diarybox .txt {
+	position: absolute;
+	width: auto;
+	top: 31%;
+	left: 8.5%;
+	color: #000;
+	z-index: 998;
+}
+
+.diarybox .txt .title {
+	float: left;
+	border-bottom: 4px solid #000;
+	display: block;
+	font-size: 30px;
+	padding: 15px 0;
+}
+
+.diarybox .txt .title .num {
+	margin-right: 8px;
+}
+
+.diarybox .txt .title .num,
+.diarybox .txt .title .name {
+	float: left;
+}
+
+.diarybox .txt .time {
+	display: block;
+	font-weight: bold;
+	width: 100%;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 85px 0;
+	font-color: #282828;
+	text-transform: uppercase;
+}
+
+.diarybox .viewcon {
+	position: absolute;
+	width: 42%;
+	height: 43%;
+	top: 20%;
+	right: 3%;
+	color: #6e6e90;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: "新宋体";
+	overflow: hidden;
+	clear: both;
+}
+
+.viewcon_div {
+	position: relative;
+	width: 91%;
+	float: left;
+	line-height: 30px;
+}
+
+.viewcon .scroll_track {
+	width: 16px;
+	height: 100%;
+	right: -430px;
+	position: relative;
+	background-color: #eaedf9;
+}
+
+.scroll_track .scroll_drag {
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: #9fa8da;
+}
+
+.diarybox .button1 {
+	position: absolute;
+	width: 34%;
+	height: 48%;
+	top: 12%;
+	left: 13%;
+	background: url(../image/s5_diarybox_piccover.png) no-repeat center/cover;
+}
+
+.diarybox_ico {
+	position: absolute;
+	top: 69.5%;
+	height: 35px;
+	display: inline-block;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.diarybox .viewchapter {
+	position: absolute;
+	width: 40%;
+	top: 10%;
+	right: 5%;
+	color: #6e6e90;
+	font-size: 35px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.diarybox_ico a {
+	width: 36px;
+	height: 35px;
+	display: inline-block;
+	background: url(../image/s5_diarybox_ico.png) no-repeat center/cover;
+	margin: 0 10px;
+}
+
+.diarybox_ico .diarybox_pre {
+	background-position: 0 0;
+}
+
+.diarybox_ico .diarybox_close {
+	background-position: -36px 0;
+}
+
+.diarybox_ico .diarybox_next {
+	background-position: -72px 0;
+}
+
+
+/*精彩视频*/
+
+.hotvid {
+	position: relative;
+	height: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	left: auto;
+}
+
+.hotvid h3 {
+	height: 5%;
+	margin: 5em 0 1em;
+	background: url(../image/radiotitle.png) no-repeat left/auto 100%;
+}
+
+.hotvid-con {
+	overflow: hidden;
+	width: 100%;
+}
+
+.hotvid .vid {
+	float: left;
+	vertical-align: top;
+	width: 31%;
+	overflow: hidden;
+	margin: 2% 3.5% 0 0;
+	font-size: 14px;
+	line-height: 16px;
+	background-color: #fff;
+}
+
+.hotvid .vid:nth-child(3n) {
+	margin: 2% 0 0 0;
+}
+
+.hotvid .vid p {
+	margin: 5px 0;
+	padding-right: 10px;
+	border-left: 2px solid #5c5dab;
+	text-indent: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.vid .vid-con {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.vid .vid-con img {
+	width: 100%;
+	float: left;
+}
+
+.vid-con span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	font-style: normal;
+	font-size: 1.2em;
+	background: rgba(0, 0, 0, .6) url(../image/sanjiaoxing.png) no-repeat center;
+	display: none;
+}
+
+.hotvid .mores {
+	margin-top: 2em;
+	height: 3%;
+	text-align: center;
+}
+
+.mores img {
+	height: 100%;
+}
+
+.guanzhu {
+	width: 100%;
+	margin: 10em 0 4em 0;
+}
+
+.guanzhu dl {
+	display: inline-block;
+	min-height: 70px;
+	padding-left: 3.47em;
+	vertical-align: top;
+	position: relative;
+}
+
+.guanzhu img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.guanzhu dt {
+	font-size: 0.65em;
+	line-height: 1.5em;
+	padding-left: 4em;
+}
+
+.guanzhu dd {
+	font-size: 0.56em;
+	padding-left: 4.2em;
+	background: url(../image/guanzhu.png) no-repeat 3.4em/auto 60%;
+}
+
+.guanzhu2,
+.guanzhu3,
+.guanzhu4 {
+	margin: 0 1em;
+}
+
+.guanzhu3 dt {
+	padding-left: 3.5em;
+	line-height: 1.5em;
+}
+
+.copy {
+	font-size: .56em;
+	text-align: center;
+	margin: 0 auto;
+}
